@@ -1,4 +1,4 @@
-# practice.automationtesting - pet_project for studuing selenium, allure
+# practice.automationtesting - My pet_project for studuing selenium, allure and loguru
 
 ## Requirements:
 * python 3.10 or latest
@@ -8,6 +8,12 @@
 * Run one test: "pytest tests/<module_name>/<test_name>"
 * Run all tests: "pytest tests/"
 * Run using pytest-xdist: "pytest -n <n>"
+
+## Allure reports:
+
+* Save test results in allure: "--alluredir=allure_results"
+* Clear allure results of previous test run: "--clean-alluredir"
+* Generate allure report: "allure serve allure_results/"
 
 ## PRE-COMMIT
 * Run command: pre-commit install

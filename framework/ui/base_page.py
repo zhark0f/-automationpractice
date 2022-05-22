@@ -1,3 +1,5 @@
+import allure
+from app.ui.locators.locator_home_page import HomePageLocators
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -33,3 +35,11 @@ class BasePage:
             self, find_by: object, locator: object, text: str, timeout: object = 15) -> object:
         element = WebDriverWait(self.browser, timeout).until(EC.text_to_be_present_in_element((find_by, locator), text))
         return element
+
+    @allure.step("Click on shop button")
+    def click_on_shop_button(self):
+        return self.wait_element_located(*HomePageLocators.LOCATOR_SHOP_BUTTON).click()
+
+    @allure.step("Click on home page button")
+    def click_on_home_page_button(self):
+        return self.wait_element_located(*HomePageLocators.LOCATOR_HOME_PAGE_BUTTON).click()
