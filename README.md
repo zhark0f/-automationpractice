@@ -1,4 +1,5 @@
 # practice.automationtesting - My pet_project for studuing selenium, allure and loguru
+# TestCases you can see on the page http://practice.automationtesting.in/test-cases/
 
 ## Requirements:
 * python 3.10 or latest
