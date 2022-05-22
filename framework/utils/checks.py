@@ -99,12 +99,10 @@ class CommonCheckers:
 
     @staticmethod
     def check_field_equals_soft(
-        field: Union[str, int], expected_value: Union[str, int],
-            assertion_message: str = "Invalid field value"):
+            field: Union[str, int], expected_value: Union[str, int], assertion_message: str = "Invalid field value"):
         assert_that(field).described_as(assertion_message).is_equal_to(expected_value)
 
     @staticmethod
     def check_field_not_equals_soft(
-        field: Union[str, int], expected_value: Union[str, int],
-            assertion_message: str = "Invalid field value"):
+            field: Union[str, int], expected_value: Union[str, int], assertion_message: str = "Invalid field value"):
         assert_that(field).described_as(assertion_message).is_equal_to(expected_value)

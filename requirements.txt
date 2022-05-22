@@ -1,3 +1,6 @@
+allure-pytest==2.9.45
+allure-python-commons==2.9.45
+assertpy==1.1
 async-generator==1.10
 atomicwrites==1.4.0
 attrs==21.4.0
@@ -9,6 +12,7 @@ charset-normalizer==2.0.12
 colorama==0.4.4
 cryptography==37.0.2
 distlib==0.3.4
+execnet==1.9.0
 filelock==3.7.0
 flake8==4.0.1
 h11==0.13.0
@@ -32,6 +36,8 @@ pyOpenSSL==22.0.0
 pyparsing==3.0.9
 PySocks==1.7.1
 pytest==7.1.2
+pytest-forked==1.4.0
+pytest-xdist==2.5.0
 PyYAML==6.0
 requests==2.27.1
 ruamel.yaml==0.17.21

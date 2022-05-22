@@ -4,3 +4,4 @@ __pycache__/
 .pytest_cache/
 /Pipfile
 /Pipfile.lock
+/allure_results
