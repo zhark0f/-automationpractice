@@ -1,4 +1,4 @@
-# practice.automationtesting - My pet_project for studying selenium, allure and loguru
+# practice.automationtesting - My pet_project for studying pytest, sellenium, allure and loguru
 # TestCases you can see on the page http://practice.automationtesting.in/test-cases/
 
 ## Requirements:
