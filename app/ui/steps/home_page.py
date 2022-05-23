@@ -21,7 +21,7 @@ class HomePage(BasePage):
         assert current_url in self.home_page_url, "whrong url for home page"
         return True
 
-    @allure.step("home page with three sliders only")
+    @allure.step("Home page with three sliders only")
     def should_be_only_three_sliders(self):
         asserts.assert_equal(self.amount_sliders_on_the_home_page(), 3, "Amount sliders don't equal 3")
 
@@ -30,3 +30,13 @@ class HomePage(BasePage):
         sliders_amount = len(self.wait_elements_located(*HomePageLocators.LOCATOR_SLIDERS))
         asserts.assert_not_equal(sliders_amount, 0, "Sliders don't present on the home page")
         return sliders_amount
+
+    @allure.step("Home page with three arrivals only")
+    def should_be_only_three_arrivals(self):
+        asserts.assert_equal(self.amount_arrivals_on_the_home_page(), 3, "Amount arrivals don't equal 3")
+
+    @allure.step("Check is arrivals on the home page")
+    def amount_arrivals_on_the_home_page(self):
+        arrivals_amount = len(self.wait_elements_located(*HomePageLocators.LOCATOR_ARRIVALS))
+        asserts.assert_not_equal(arrivals_amount, 0, "Arrivals don't present on the home page")
+        return arrivals_amount
