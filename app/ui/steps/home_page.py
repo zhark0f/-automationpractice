@@ -1,7 +1,7 @@
 from random import choice
 
 import allure
-from app.ui.locators.locator_home_page import HomePageLocators
+from app.ui.locators.locators_home_page import HomePageLocators
 from configs.config import get_data
 from framework.logger.logger import Logger
 from framework.ui.base_page import BasePage

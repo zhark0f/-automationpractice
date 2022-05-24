@@ -1,4 +1,5 @@
 {
     "shop_menu_url": "http://practice.automationtesting.in/shop/",
-    "home_page_url": "http://practice.automationtesting.in/"
+    "home_page_url": "http://practice.automationtesting.in/",
+    "my_account_page_url": "http://practice.automationtesting.in/my-account/"
 }

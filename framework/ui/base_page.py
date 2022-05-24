@@ -1,5 +1,5 @@
 import allure
-from app.ui.locators.locator_home_page import HomePageLocators
+from app.ui.locators.locators_home_page import HomePageLocators
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -43,3 +43,7 @@ class BasePage:
     @allure.step("Click on home page button")
     def click_on_home_page_button(self):
         return self.wait_element_located(*HomePageLocators.LOCATOR_HOME_PAGE_BUTTON).click()
+
+    @allure.step("Click on 'My Account' button")
+    def click_on_my_account_button(self):
+        return self.wait_element_located(*HomePageLocators.LOCATOR_MY_ACCOUNT_BUTTON).click()
